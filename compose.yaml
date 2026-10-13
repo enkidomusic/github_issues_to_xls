@@ -1,0 +1,11 @@
+services:
+  roadmap-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+      TZ: ${TZ:-Europe/Stockholm}
+    volumes:
+      # Generated Excel files are saved to ./res on the host computer.
+      - ./res:/app/res

@@ -1,0 +1,6 @@
+repos:
+  - repo: maps-of-discipline/admin-api-python-sdk
+    filter: "is:issue state:open -label:deffered -label:sub-issue"
+
+  - repo: maps-of-discipline/vacant_back
+    filter: "is:issue state:open"
